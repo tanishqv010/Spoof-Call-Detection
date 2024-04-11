@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Analysis Control Panel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Emotion Analysis Control Panel</h1>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+    <script>
+        $(document).ready(function(){
+            $("#startBtn").click(function(){
+                $.ajax({
+                    url: '/start',
+                    type: 'POST',
+                    success: function(response){
+                        console.log(response.message);
+                    },
+                    error: function(xhr, status, error){
+                        console.error("Error:", error);
+                    }
+                });
+            });
+
+            $("#stopBtn").click(function(){
+                $.ajax({
+                    url: '/stop',
+                    type: 'POST',
+                    success: function(response){
+                        console.log(response.message);
+                    },
+                    error: function(xhr, status, error){
+                        console.error("Error:", error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
