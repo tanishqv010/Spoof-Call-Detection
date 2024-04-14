@@ -44,7 +44,7 @@ To limit overfitting, we tuned the model with :
 - And kept the best model
 
 <p align="center">
-    <img src="/static/Pipeline.png" width="400" height="400" />
+    <img src="/static/Accuracy%20Curve.png" width="400" height="400" />
 </p>
 
 ## IV. How to use it ?
