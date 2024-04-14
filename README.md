@@ -36,7 +36,7 @@ The model we have chosen is a **Time Distributed Convolutional Neural Network**.
 The main idea of a **Time Distributed Convolutional Neural Network** is to apply a rolling window (fixed size and time-step) all along the log-mel-spectrogram.
 Each of these windows will be the entry of a convolutional neural network, composed by four Local Feature Learning Blocks (LFLBs) and the output of each of these convolutional networks will be fed into a recurrent neural network composed by 2 cells LSTM (Long Short Term Memory) to learn the long-term contextual dependencies. Finally, a fully connected layer with *softmax* activation is used to predict the emotion detected in the voice.
 
-![image](/00-Presentation/Images/sound_pipeline.png)
+![image](<img width="1213" alt="sound_pipeline" src="https://github.com/tanishqv010/Spoof-Call-Detection/assets/70789222/c85c485f-320c-4cfb-85a6-3017bd994275">)
 
 To limit overfitting, we tuned the model with :
 - Audio data augmentation
@@ -44,7 +44,8 @@ To limit overfitting, we tuned the model with :
 - And kept the best model
 
 <p align="center">
-    <img src="/00-Presentation/Images/Accuracy_Speech.png" width="400" height="400" />
+    <img src="<img width="300" alt="Accuracy_Speech" src="https://github.com/tanishqv010/Spoof-Call-Detection/assets/70789222/808b8d1b-ea56-4425-8b29-cd0a21c290fc">
+" width="400" height="400" />
 </p>
 
 ## IV. How to use it ?
