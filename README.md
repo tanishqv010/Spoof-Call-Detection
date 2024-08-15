@@ -1,6 +1,6 @@
 # Real-Time Spoof Call Detection using Emotion Analysis
 
-Don't hesitate to ⭐ the repo if you enjoy our work !
+Don't hesitate to ⭐ the repo if you enjoy our work!
 
 ## In a nutshell
 
